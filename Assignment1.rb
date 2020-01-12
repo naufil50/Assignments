@@ -1,15 +1,17 @@
 # Example 1 REFACTORED:
 def get_addresses
-    Address.where.not(city_id: nil)
+  Address.where.not(city_id: nil)
 end
   
 # Example 2 REFACTORED:
-  class Greeting
-    attr_accessor :name
-  end
+class Greeting
+  attr_accessor :name
+end
   
 # Example 3 REFACTORED:
-  def sum(*values)
-    values.inject(0, :+)
-  end
+def sum(*values)
+  values.inject(0, :+)
+end
   
+puts sum(2, 3)
+puts sum(1,2,3,4)
