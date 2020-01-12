@@ -72,8 +72,7 @@ class Match
 
     def calculate_result
         
-      case status
-            
+      case status           
         when 'win'
             team_one.wins
             team_two.loses
@@ -88,7 +87,6 @@ class Match
             
         else
             puts "status #{status} is invalid"      
-
       end               
     end
 end
