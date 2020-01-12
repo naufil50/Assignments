@@ -19,8 +19,6 @@ class MainApp
       tournament.score_card
     end
 end
-  
-
 
 class Tournament
     SCORE = {
@@ -39,9 +37,7 @@ class Tournament
         team_one = @teams[match_str[0]] ||= Team.new(match_str[0])
         team_two = @teams[match_str[1]] ||= Team.new(match_str[1])
                      
-        Match.new(team_one, team_two, match_str[2]).calculate_result
-        
-        
+        Match.new(team_one, team_two, match_str[2]).calculate_result     
       end
     end
   
@@ -59,8 +55,6 @@ class Tournament
     end
 end
  
-
-
 class Match
     attr_accessor :team_one, :team_two, :status
 
@@ -91,8 +85,6 @@ class Match
     end
 end
  
-
-
 class Team
     attr_accessor :name, :win, :lose, :draw
   
